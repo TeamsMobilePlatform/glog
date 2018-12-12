@@ -9,14 +9,15 @@ Pod::Spec.new do |spec|
   spec.source = { :git => 'https://github.com/TeamsMobilePlatform/glog.git' }
   spec.module_name = 'glog'
   spec.header_dir = 'glog'
-  spec.source_files = 'src/glog/*.h',
+  spec.source_files = 'src/glog/*.{h, h.in}',
                       'src/demangle.cc',
                       'src/logging.cc',
                       'src/raw_logging.cc',
                       'src/signalhandler.cc',
                       'src/symbolize.cc',
                       'src/utilities.cc',
-                      'src/vlog_is_on.cc'
+                      'src/vlog_is_on.cc',
+                      'src/*.{h, h.in}',
   # workaround for https://github.com/facebook/react-native/issues/14326
   spec.preserve_paths = 'src/*.h',
                         'src/base/*.h'
