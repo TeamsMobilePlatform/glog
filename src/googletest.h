@@ -445,7 +445,7 @@ static inline string Munge(const string& filename) {
   while (fgets(buf, 4095, fp)) {
     string line = MungeLine(buf);
     char null_str[256];
-    sprintf(null_str, "%p", static_cast<void*>(NULL));
+    sprintf_s(null_str, "%p", static_cast<void*>(NULL));
     StringReplace(&line, "__NULLP__", null_str);
     // Remove 0x prefix produced by %p. VC++ doesn't put the prefix.
     StringReplace(&line, " 0x", " ");
