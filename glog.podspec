@@ -6,8 +6,7 @@ Pod::Spec.new do |spec|
   spec.summary = 'Google logging module'
   spec.authors = 'Google'
 
-  spec.source = { :git => 'https://github.com/TeamsMobilePlatform/glog.git',
-                  :tag => "v#{spec.version}" }
+  spec.source = { :git => 'https://github.com/TeamsMobilePlatform/glog.git' }
   spec.module_name = 'glog'
   spec.header_dir = 'glog'
   spec.source_files = 'src/glog/*.h',
