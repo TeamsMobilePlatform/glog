@@ -11,6 +11,7 @@ Pod::Spec.new do |spec|
   spec.header_dir = 'glog'
   spec.source_files = 'src/glog/*.h',
   'src/glog/*.h.in',
+  'src/*.h.in',
                       'src/demangle.cc',
                       'src/logging.cc',
                       'src/raw_logging.cc',
@@ -18,7 +19,7 @@ Pod::Spec.new do |spec|
                       'src/symbolize.cc',
                       'src/utilities.cc',
                       'src/vlog_is_on.cc',
-                      'src/*.{h, h.in}',
+                      'src/*.h}',
   # workaround for https://github.com/facebook/react-native/issues/14326
   spec.preserve_paths = 'src/*.h',
                         'src/base/*.h'
