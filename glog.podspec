@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.module_name = 'glog'
   spec.header_dir = 'glog'
   spec.source_files = 'src/glog/*.h',
-  'src/glog/*.h.in'
+  'src/glog/*.h.in',
                       'src/demangle.cc',
                       'src/logging.cc',
                       'src/raw_logging.cc',
