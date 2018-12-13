@@ -19,13 +19,11 @@ Pod::Spec.new do |spec|
                       'src/symbolize.cc',
                       'src/utilities.cc',
                       'src/vlog_is_on.cc',
-                      'src/*.h',
-                      'src/windows/**/*.h',
-                      'src/windows/config.h'
+                      'src/*.h'
   # workaround for https://github.com/facebook/react-native/issues/14326
   spec.preserve_paths = 'src/*.h',
                         'src/base/*.h'
-  spec.exclude_files       = "src/windows"
+  spec.exclude_files       = "src/windows/**/*"
   spec.libraries           = "stdc++"
   spec.pod_target_xcconfig = { "USE_HEADERMAP" => "NO",
                                "HEADER_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/src" }
