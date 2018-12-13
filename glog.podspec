@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
                       'src/utilities.cc',
                       'src/vlog_is_on.cc',
                       'src/*.h',
-                      'src/windows/**/*''
+                      'src/windows/**/*'
   # workaround for https://github.com/facebook/react-native/issues/14326
   spec.preserve_paths = 'src/*.h',
                         'src/base/*.h'
